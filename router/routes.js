@@ -7,7 +7,7 @@ const router = express.Router()
 
 
 
-router.get('/index',(req,res)=>{         //แสดงผลเนื้อหาใน views
+router.get('/',(req,res)=>{         //แสดงผลเนื้อหาใน views
     res.render('index.ejs')
 })
 
