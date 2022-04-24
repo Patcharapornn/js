@@ -1,0 +1,88 @@
+body{
+   
+    text-align: center;
+    background-image: url('../image/10.jpg');
+    position: center;
+    background-size:cover;
+    background-position: 30% 40%;
+ 
+
+}
+img{
+    width: 10%;
+    height: 20%;
+    float: left;
+}
+
+
+
+.container{
+
+    width: 800px;
+    position: absolute;
+    
+
+  
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+  
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #0abde3;
+
+}
+
+
+
+
+h1{
+    color: black;
+    font-size: 45px;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 10px;
+    
+
+}
+.submit{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 30px;
+    background: none;
+    border: #066888 solid 2px;
+    color: #066888;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+   
+    
+    
+
+}
+.submit::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #066888;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.submit:hover{
+    color:white;
+
+}
+.submit:hover::after{
+    width: 100%;
+}
+
+
+
+

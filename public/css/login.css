@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+    padding: 0;
+    text-align: center;
+     background-image: url('../image/10.jpg');
+    min-height: 100vh;
+   
+}
+img{
+    width: 10%;
+    height: 20%;
+    float: left;
+}
+
+
+.container form .reset{
+    text-align: right;
+    padding-right: 60px;
+    font-size: 15px;
+}
+
+  
+.container{
+
+    width: 450px;
+    position: absolute;
+    
+
+  
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px ;
+    text-align: center;
+
+}
+.container .btn3{
+    font-size: 15px;
+    padding: 10px 30px;
+    background: none;
+   
+    color: #066888;
+    font-weight: 700;
+   
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+    
+    
+    
+
+}
+.container .btn3::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #066888;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.container .btn3:hover{
+    color:white;
+
+}
+.container .btn3:hover::after{
+    width: 100%;
+}
+
+
+
+
+.container .btn4{
+    font-size: 15px;
+    padding: 10px 30px;
+    background: none;
+   
+    color: #066888;
+    font-weight: 700;
+   
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+    
+    
+    
+
+}
+.container .btn4::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #066888;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.container .btn4:hover{
+    color:white;
+
+}
+.container .btn4:hover::after{
+    width: 100%;
+}
+#e,#p{
+    text-align: left;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #341f97;
+    width: 200px;
+    font-size: 20px;
+    color: #341f97;
+    
+
+}
+form{
+   font-size: 40px;
+
+   
+}
+h2{
+    color: black;
+    font-size: 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    text-align: center;
+    padding-top: 2px;
+    padding-left: 10px;
+}
+
