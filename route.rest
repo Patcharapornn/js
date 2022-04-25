@@ -5,11 +5,21 @@ POST http://localhost:8080/register
 Content-Type: application/json
 
 {
+   "e":"6306021620140@fitm.kmutnb.ac.th",
+    "password": "456",
+    "name":"ทัศนีย์ สีสนธิ์"
+    
+}
+
+###
+POST http://env-ff.app.ruk-com.cloud/register
+Content-Type: application/json
+
+{
    "e":"6306021610080@fitm.kmutnb.ac.th",
     "password": "123",
     "name":"พัชรพร มุ่งทวีเกียรติ"
 }
-
 
     
     

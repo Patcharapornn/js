@@ -10,11 +10,10 @@ const userSchema = new mongoose.Schema({
     e: String,
     password: String,
     name: String,
-    data:{
-        subject:String,
-        n:Number,
-        score:String
-    }
+
+    sub:String
+
+   
 
 })
 

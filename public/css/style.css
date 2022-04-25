@@ -1,0 +1,32 @@
+body{
+    
+    
+        text-align: center;
+         background-image: url('../image/15.jpg');
+         background-size:cover;
+         width: 100%;
+         background-position: center;
+    
+        
+    
+    
+}
+
+td{
+    font-family: "Bahnschrift Condensed";
+}
+
+th{
+    font-family: "JasmineUPC";
+    font-size: 25px;
+}
+
+tt{
+    font-family: "JasmineUPC";
+    font-size: 25px;
+}
+
+caption{
+    font-family: "JasmineUPC";
+    font-size: 30px;
+}

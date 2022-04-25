@@ -1,9 +1,13 @@
 body{
-    background-color:white;
-    position: center;
-    background-size:cover;
-    background-position: 30% 40%;
- 
+    
+    text-align: center;
+     background-image: url('../image/22.jpg');
+     background-size:cover;
+     width: 100%;
+     background-position: center;
+
+    
+
 }
 *{
     padding: 0;
@@ -11,21 +15,32 @@ body{
     text-decoration: none;
     list-style: none;   
 }
-nav{
-    background-color:blueviolet;
-    height: 90px;
-    width: 100%;
-    box-shadow: 10px 10px 20px ;
-}
+
 img{
-    width: 10%;
-    height: 20%;
+    width: 150px;
+   
     float: left;
 
 }
+
+nav{
+        background: linear-gradient(-45deg,#018ABE,#97CADB);
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.73);
+        -webkit-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.73);
+        -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.73);
+    
+}
+
 nav ul{
     float: right;
     margin-right: 40px;
+   
+   
 }
 nav li{
     display: inline-block;
@@ -62,9 +77,10 @@ font-size:20px;
     text-align: center;
     padding-top: 20%;
 }
-.bar{
-    padding-top: 100px;
-    padding-left: 70px;
+.bar {
+    padding-top: 150px;
+  
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .out{
@@ -73,4 +89,12 @@ font-size:20px;
 }
 h2{
     padding-right: 100px;
+}
+h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px 20px;
+    display: inline;
+
 }

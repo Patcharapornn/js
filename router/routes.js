@@ -6,13 +6,19 @@ const User = require('../model/user')
 const router = express.Router()
 
 
-
+const isLoggedIn = (req, res, next) => {
+  if (!req.user) {
+  return res.redirect('/login');
+  }
+  next()
+}
 router.get('/',(req,res)=>{         //แสดงผลเนื้อหาใน views
     res.render('index.ejs')
 })
 
-router.get('/home',(req,res)=>{         //แสดงผลเนื้อหาใน views
-    res.render('home.ejs')
+router.get('/home',isLoggedIn,(req,res)=>{         //แสดงผลเนื้อหาใน views
+    res.render('home.ejs',{user:req.user})
+
 })
 
 router.get('/showgrade',(req,res)=>{         //แสดงผลเนื้อหาใน views
@@ -26,14 +32,15 @@ router.get('/login',(req,res)=>{
    
 })
 router.post('/login',async(req,res)=>{
-  const {userID,password} = req.body
+  
   const user = await User.findOne({
-    userID,
-    password
+    e:req.body.userID,
+    password :req.body.password
   })
   if(user){
     req.user = user
-    res.render('home.ejs',{user})
+    res.render('home',{user})
+    
   }
   else{
     
