@@ -2,7 +2,7 @@ body{
     
     
         text-align: center;
-         background-image: url('../image/31.jpg');
+         background-image: url('../image/1.jpg');
          background-size:cover;
          width: 100%;
          background-position: center;
@@ -33,4 +33,8 @@ caption{
 #back{
     font-size: 30px;
     padding-right: 90%;
+    color: white;
+}
+table{
+    background-color: aliceblue;
 }
