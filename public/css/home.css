@@ -1,10 +1,11 @@
 body{
     
     text-align: center;
-     background-image: url('../image/22.jpg');
+     background-image: url('../image/31.jpg');
      background-size:cover;
      width: 100%;
      background-position: center;
+     
 
     
 
@@ -78,18 +79,38 @@ font-size:20px;
     padding-top: 20%;
 }
 .bar {
-    padding-top: 150px;
-    width: 450px;
+    padding-top: 5px;
+    width: 200px;
     position: absolute;
     
 
   
-    top: 50%;
-    left: 50%;
+    top: 41%;
+    left: 30%;
     background-color: white;
-  
+    border-radius: 25px;
+    font-size: 15px;
     font-family: 'Chakra Petch', sans-serif;
 }
+
+.h{
+
+    padding-top: 5px;
+    width: 200px;
+    position: absolute;
+    
+
+  
+    top: 40%;
+   margin:10px 900px 60px ;
+   
+    background-color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
 
 .out{
     padding-top: 30px;

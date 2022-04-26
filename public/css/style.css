@@ -2,7 +2,7 @@ body{
     
     
         text-align: center;
-         background-image: url('../image/15.jpg');
+         background-image: url('../image/31.jpg');
          background-size:cover;
          width: 100%;
          background-position: center;
@@ -29,4 +29,8 @@ tt{
 caption{
     font-family: "JasmineUPC";
     font-size: 30px;
+}
+#back{
+    font-size: 30px;
+    padding-right: 90%;
 }

@@ -31,6 +31,8 @@ router.get('/login',(req,res)=>{
   res.render('login.ejs')     //แสดงผลเนื้อหาใน views
    
 })
+
+
 router.post('/login',async(req,res)=>{
   
   const user = await User.findOne({
