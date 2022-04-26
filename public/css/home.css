@@ -2,9 +2,9 @@ body{
     
     text-align: center;
      background-image: url('../image/20.jpeg');
+     position: center;
      background-size:cover;
-     width: 100%;
-     background-position: center;
+     background-position: 30% 40%;
      
 
     
@@ -101,7 +101,7 @@ font-size:20px;
     
 
   
-    top: 40%;
+    top: 20%;
    margin:10px 900px 60px ;
    
     background-color: white;
