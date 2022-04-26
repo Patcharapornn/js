@@ -17,8 +17,6 @@ mongoose.connect(process.env.DATABASE_URL,{
   db.once('open',() => console.log('Connected to Database'))
 
 
-
-
 const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
