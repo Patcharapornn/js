@@ -101,21 +101,12 @@ font-size:20px;
     
 
   
-    top: 30%;
-   margin:10px 900px 60px ;
-   
+    top: 41%;
+    left: 30%;
     background-color: white;
     border-radius: 25px;
     font-size: 15px;
     font-family: 'Chakra Petch', sans-serif;
-    width:150px;  
-    padding:4px;
-     
-     border:1px solid #dcdc77;
-    color:#dcdc77;
-    border-style:solid;
-    border-width:4px;
-    border-color:#dcdc77 gray gray #dcdc77;
 }
 
 
