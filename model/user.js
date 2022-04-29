@@ -11,11 +11,11 @@ const userSchema = new mongoose.Schema({
     password: String,
     name: String,
 
-    sub:String
-
    
+ })
 
-})
+
+ 
 
 //สร้างโมเดล
 let Users = mongoose.model("User",userSchema)

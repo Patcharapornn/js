@@ -3,6 +3,7 @@
 const { render } = require('ejs')
 const express = require('express') // ดึง express มาใช้งาน
 const User = require('../model/user')
+
 const router = express.Router()
 
 
@@ -52,7 +53,7 @@ router.post('/login',async(req,res)=>{
   }
 })
 
-// ดูตรงนี้
+// ของ register
 
 router.post('/register',async(req, res) => {
   const user = new User({
@@ -72,6 +73,9 @@ router.post('/register',async(req, res) => {
     res.status(400).json({ message: err.message })
     }
 })
+
+
+
 
 
 
