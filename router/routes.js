@@ -3,7 +3,7 @@
 const { render } = require('ejs')
 const express = require('express') // ดึง express มาใช้งาน
 const User = require('../model/user')
-const Subject  = require('../model/subject')
+const Subject  = require('../model/term1')
 
 const router = express.Router()
 

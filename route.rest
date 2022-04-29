@@ -34,7 +34,8 @@ Content-Type: application/json
   "c":"060243113",
   "namesubject":"data sci",
   "unit":"3.5",
-  "grade":"A"
+  "grade":"A",
+  "total":"3.80"
 }
      
         

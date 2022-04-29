@@ -21,7 +21,7 @@ const subjectSchema = new mongoose.Schema({
  })
  
 //สร้างโมเดล
-let Subjects = mongoose.model("Subject",subjectSchema)
+let Term1 = mongoose.model("Subject",subjectSchema)
 
 //ส่งออกโมเดล
-module.exports = Subjects
+module.exports = Term1
