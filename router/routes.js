@@ -13,11 +13,11 @@ const isLoggedIn = (req, res, next) => {
   }
   next()
 }
-router.get('/',(req,res)=>{         //แสดงผลเนื้อหาใน views
+router.get('/',(req,res)=>{         
     res.render('index.ejs')
 })
 
-router.get('/home',isLoggedIn,(req,res)=>{         //แสดงผลเนื้อหาใน views
+router.get('/home',isLoggedIn,(req,res)=>{         
     res.render('home.ejs',{user:req.user})
 
 })
@@ -32,7 +32,7 @@ router.get('/login',(req,res)=>{
   res.render('login.ejs')     //แสดงผลเนื้อหาใน views
    
 })
-
+// ของ register
 
 router.post('/login',async(req,res)=>{
   
@@ -53,7 +53,7 @@ router.post('/login',async(req,res)=>{
   }
 })
 
-// ของ register
+
 
 router.post('/register',async(req, res) => {
   const user = new User({
@@ -73,12 +73,6 @@ router.post('/register',async(req, res) => {
     res.status(400).json({ message: err.message })
     }
 })
-
-
-
-
-
-
 
 
 module.exports = router   // export router ให้ไฟล์อื่นใช้งาน

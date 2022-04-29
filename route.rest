@@ -20,8 +20,8 @@ Content-Type: application/json
 
  {
        
-   "e":"6306021610080@fitm.kmutnb.ac.th",
-    "password": "123",
+   "e":"6306021610010fitm.kmutnb.ac.th",
+    "password": "1111",
     "name":"พัชรพร มุ่งทวีเกียรติ"
 
    
