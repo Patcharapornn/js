@@ -3,6 +3,7 @@
 const { render } = require('ejs')
 const express = require('express') // ดึง express มาใช้งาน
 const User = require('../model/user')
+const Subject  = require('../model/subject')
 
 const router = express.Router()
 
@@ -69,6 +70,28 @@ router.post('/register',async(req, res) => {
   try {
     const newUser = await user.save()
     res.status(201).json(newUser)
+    }catch (err) {
+    res.status(400).json({ message: err.message })
+    }
+})
+
+
+router.post('/showgrade',async(req, res) => {
+  const subject = new Subject({
+
+
+      c: req.body.c,
+      namesubject:req.body.namesubject,
+      unit:req.body.unit,
+      grade:req.body.grade,
+      total:req.body.total
+      
+    
+    
+  })
+  try {
+    const newSubject = await subject.save()
+    res.status(201).json(newSubject)
     }catch (err) {
     res.status(400).json({ message: err.message })
     }
