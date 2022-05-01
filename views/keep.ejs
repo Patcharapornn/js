@@ -1,0 +1,190 @@
+<div id ="back">
+    <a href="/home">ย้อนกลับ</a>
+</div>
+
+<table border = "1" align="center" width="50%" height = "200" >
+    <caption> ผลการเรียนปีการศึกษา 2563 ภาคเรียนที่ 1</caption><br>
+    <thead>
+        <tr>
+            <th>รหัสวิชา</th> 
+            <th>ชื่อวิชา</th> 
+            <th>หน่วยกิต</th> 
+            <th>เกรด</th></tr>
+        <tbody>
+            <tr>
+                <td><%= subject.c %></td> 
+                <td> <%= subject.namesubject %></td> 
+                <td><%= subject.unit %></td> 
+                <td><%= subject.grade %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c2 %></td> 
+                <td><%= subject.namesubject2%></td>
+                <td><%= subject.unit2 %></td> 
+                <td><%= subject.grade2 %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c3 %></td> 
+                <td> <%= subject.namesubject3 %></td> 
+                <td><%= subject.unit3 %></td> 
+                <td><%= subject.grade3 %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c4 %></td> 
+                <td> <%= subject.namesubject4 %></td> 
+                <td><%= subject.unit4 %></td> 
+                <td><%= subject.grade4 %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c5 %></td> 
+                <td> <%= subject.namesubject5 %></td> 
+                <td><%= subject.unit5 %></td> 
+                <td><%= subject.grade5 %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c6 %></td> 
+                <td> <%= subject.namesubject6 %></td> 
+                <td><%= subject.unit6 %></td> 
+                <td><%= subject.grade6 %></td>
+            </tr>
+            <tr>
+                <td><%= subject.c7 %>/td> 
+                <td> <%= subject.namesubject7 %></td> 
+                <td><%= subject.unit7 %></td>
+                <td><%= subject.grade7 %></td>
+            </tr>   
+            <tr>
+                <td colspan = "2"><tt>เกรดเฉลี่ยประจำภาค</tt></td> 
+                <td colspan = "2"> <%= subject.total %></td>
+        </tbody><br>
+    </thead>
+</table>
+
+
+<table border = "1" align="center" width="50%" height = "200" bgcolor = "#53A7D8">
+    <caption> ผลการเรียนปีการศึกษา 2563 ภาคเรียนที่ 2</caption><br>
+    <thead>
+        <tr>
+            <th>รหัสวิชา</th> 
+            <th>ชื่อวิชา</th> 
+            <th>หน่วยกิต</th> 
+            <th>เกรด</th></tr>
+        <tbody>
+            <tr>
+                <td>040203123</td> 
+                <td> DISCRETE MATHEMATICS AND APP</td> 
+                <td>3</td> 
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>040503001</td> 
+                <td> STATISTICS FOR EVERYDAY LIFE</td>
+                <td>3</td> 
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>060243104</td> 
+                <td> OBJECT-ORIENTED PROGRAMMING</td> 
+                <td>3</td> 
+                <td>D+</td>
+            </tr>
+            <tr>
+                <td>060243105</td> 
+                <td> FUNDAMENTAL OF GRAPHICS DESIGN</td> 
+                <td>3</td> 
+                <td>A</td></tr>
+            <tr>
+                <td>080103002</td> 
+                <td> ENGLISH 2</td> 
+                <td>3</td> 
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>080303601</td> 
+                <td> HUMAN RELATIONS</td> 
+                <td>3</td> 
+                <td>B+</td></tr>
+            <tr>
+                <td colspan = "2"><tt>เกรดเฉลี่ยประจำภาค</tt></td> 
+                <td colspan = "2"> 3.16</td>
+            </tr>
+        </tbody><br>
+    </thead>
+</table>
+
+
+<table border = "1" align="center" width="50%" height = "200" bgcolor = "#53A7D8">
+    <caption> ผลการเรียนปีการศึกษา 2564 ภาคเรียนที่ 1</caption><br>
+    <thead>
+        <tr>
+            <th>รหัสวิชา</th> 
+            <th>ชื่อวิชา</th> 
+            <th>หน่วยกิต</th> 
+            <th>เกรด</th>
+        </tr>
+        <tbody>
+            <tr>
+                <td>060243106</td> 
+                <td> DATA STRUCTURE AND ALGORITHM</td> 
+                <td>3</td> 
+                <td>C+</td>
+            </tr>
+            <tr>
+                <td>060243107</td> 
+                <td> COMPUTER ARCHITECTURE</td> 
+                <td>3</td> 
+                <td>C+</td></tr>
+            <tr>
+                <td>060243108</td> 
+                <td> DATABASE SYSTEM</td> 
+                <td>3</td> 
+                <td>B+</td>
+            </tr>
+            <tr>
+                <td>060243109</td> 
+                <td> COMPUTER NETWORK AND COMMUNICATION</td> 
+                <td>3</td> 
+                <td>A</td>
+            </tr>
+            <tr><td>080303603</td> 
+                <td> PERSONALITY DEVELOPMENT</td> 
+                <td>3</td> 
+                <td>A</td>
+            </tr>
+            <tr>
+                <td colspan = "2"><tt>เกรดเฉลี่ยประจำภาค</tt></td> 
+                <td colspan = "2"> 3.30</td>
+            </tr>
+        </tbody><br>
+    </thead>
+</table>
+<!DOCTYPE html >
+<head>
+        <link rel="stylesheet"  href="/css/style.css">
+        <title>ตาราง</title>
+</head>
+<body>
+
+     
+    <nav>
+        <img src= "fitm.png">
+        <h1>ระบบคำนวณเกรดเฉลี่ยรวม(GPA)</h1>
+       
+      
+        <ul>
+           
+         <h3><%= user.name %></h3>
+           
+           
+            <i class="fa-solid fa-right-from-bracket fa-1x"></i>
+        
+        </a>
+  
+     
+      
+
+        </ul>
+    </nav>
+
+    </body>
+    </html>

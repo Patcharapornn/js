@@ -129,10 +129,18 @@ form{
 }
 h2{
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Chakra Petch', sans-serif;
     text-align: center;
     padding-top: 2px;
     padding-left: 10px;
+}
+input[type="text"] {
+    width: 250px;
+    height: 30px;
+}
+input[type="password"] {
+    width: 250px;
+    height: 30px;
 }
 

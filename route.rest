@@ -1,5 +1,9 @@
 GET http://localhost:8080/index
 
+
+
+
+
 ###
 POST http://localhost:8080/register
 Content-Type: application/json
@@ -27,16 +31,95 @@ Content-Type: application/json
    
 }      
 ###
-POST http://localhost:8080/showgrade
+POST http://localhost:8080/termgrade1
 Content-Type: application/json
 
 {
-  "c":"060243113",
-  "namesubject":"data sci",
-  "unit":"3.5",
-  "grade":"A",
-  "total":"3.80"
+  "c":"040203100",
+  "namesubject":"GENERAL MATHEMATICS",
+  "unit":"3 ",
+  "grade":"B+",
+  
+
+    "c2": "060243101",
+    "namesubject2": " FUNDAMENTAL OF INFORMATION ",
+    "unit2": "3",
+    "grade2":"C+",
+
+    "c3": "060243102 ",
+    "namesubject3":" COMPUTER PROGRAMMING",
+    "unit3": "3",
+    "grade3":"B",
+
+    "c4": "060243103 ",
+    "namesubject4":"PROBLEM SOLVING IN INFOMATION",
+    "unit4": "3",
+    "grade4":"C",
+
+    "c5": "080103001",
+    "namesubject5": "ENGLISH I",
+    "unit5": "3",
+    "grade5":"B+",
+
+    "c6": "080303518" ,
+    "namesubject6": "AEROBIC DANCE & COVER DANCE",
+    "unit6":"1" ,
+    "grade6":"A",
+
+    "c7": "080303606",
+    "namesubject7": "SYSTEMATIC AND CREATIVE THIN",
+    "unit7":"3",
+    "grade7":"B+",
+
+    "totalunit":"19",
+    
+    "total":"3.05"
+
 }
      
-        
 
+
+###
+POST http://localhost:8080/termgrade2
+Content-Type: application/json
+
+{
+
+  "cc":"040203123",
+  "namesubjectt":"DISCRETE MATHEMATICS AND APP",
+  "unitt":"3 ",
+  "gradee":"B",
+  
+
+  "c22": "040503001",
+  "namesubject22": " STATISTICS FOR EVERYDAY LIFE ",
+  "unit22": "3",
+  "grade22":"B",
+
+  "c33": "060243104 ",
+  "namesubject33":"  OBJECT-ORIENTED PROGRAMMING",
+  "unit33": "3",
+  "grade33":"D+",
+
+  "c44": "060243105 ",
+  "namesubject44":"FUNDAMENTAL OF GRAPHICS DESIGN",
+  "unit44": "3",
+  "grade44":"A",
+
+  "c55": "080103002",
+  "namesubject55": "ENGLISH 2",
+  "unit55": "3",
+  "grade55":"A",
+
+  "c66": "080303601" ,
+  "namesubject66": "HUMAN RELATIONS",
+  "unit66":"3" ,
+  "grade66":"B+",
+
+    
+
+  "totalunit2":"18",
+    
+  "total2":"3.16"
+
+}
