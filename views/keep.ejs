@@ -188,3 +188,252 @@
 
     </body>
     </html>
+
+
+
+    
+{
+
+
+    "e":"6306021620140@fitm.kmutnb.ac.th",
+      "term":2,
+  
+    "c":"040203123",
+    "namesubject":"DISCRETE MATHEMATICS AND APP",
+    "unit":3 ,
+    "grade":"B",
+    
+  
+    "c2": "040503001",
+    "namesubject2": " STATISTICS FOR EVERYDAY LIFE ",
+    "unit2":3,
+    "grade2":"B",
+  
+    "c3": "060243104 ",
+    "namesubject3":"  OBJECT-ORIENTED PROGRAMMING",
+    "unit3": 3,
+    "grade3":"D+",
+  
+    "c4": "060243105 ",
+    "namesubject4":"FUNDAMENTAL OF GRAPHICS DESIGN",
+    "unit4": 3,
+    "grade4":"A",
+  
+    "c5": "080103002",
+    "namesubject5": "ENGLISH 2",
+    "unit5": 3,
+    "grade5":"A",
+  
+    "c6": "080303601" ,
+    "namesubject6": "HUMAN RELATIONS",
+    "unit6":3,
+    "grade6":"B+",
+  
+      
+  
+    "totalunit":18,
+      
+    "total":3.16
+  
+  }
+
+
+
+  
+{
+
+    "e":"6306021620140@fitm.kmutnb.ac.th",
+    "term":3,
+
+   
+
+
+  "c":"060243106",
+  "namesubject":"DATA STRUCTURE AND ALGORITHM",
+  "unit":3 ,
+  "grade":"C+",
+  
+
+  "c2": "060243107",
+  "namesubject2": " COMPUTER ARCHITECTURE ",
+  "unit2": 3,
+  "grade2":"C+",
+
+  "c3": "060243108 ",
+  "namesubject3":"  DATABASE SYSTEM",
+  "unit3": 3,
+  "grade3":"C+",
+
+  "c4": "060243109 ",
+  "namesubject4":" COMPUTER NETWORK AND COMMUNICATION",
+  "unit4": 3,
+  "grade4":"A",
+
+  "c5": "080303603",
+  "namesubject5": "PERSONALITY DEVELOPMENT",
+  "unit5": 3,
+  "grade5":"A",
+
+ 
+    
+
+  "totalunit":15,
+    
+  "total":3.30
+
+}
+
+
+{
+
+
+    "e":"6306021620140@fitm.kmutnb.ac.th",
+    "term":1,
+  
+    "c":"040203100",
+    "namesubject":"GENERAL MATHEMATICS",
+    "unit":3 ,
+    "grade":"B+",
+    
+  
+    "c2": "060243101",
+    "namesubject2": " FUNDAMENTAL OF INFORMATION T",
+    "unit2":3,
+    "grade2":"C+",
+  
+    "c3": "060243102   ",
+    "namesubject3":" COMPUTER PROGRAMMING",
+    "unit3": 3,
+    "grade3":"B",
+  
+    "c4": "060243103 ",
+    "namesubject4":"PROBLEM SOLVING IN INFORMATION",
+    "unit4": 3,
+    "grade4":"C",
+  
+    "c5": "080103001",
+    "namesubject5": "ENGLISH I",
+    "unit5": 3,
+    "grade5":"B+",
+  
+    "c6": "080303518 " ,
+    "namesubject6": "AEROBIC DANCE & COVER DANCE",
+    "unit6":1,
+    "grade6":"A",
+  
+    "c7": "080303606  " ,
+    "namesubject7": "SYSTEMATIC AND CREATIVE THINKING",
+    "unit7":3,
+    "grade7":"B+",
+  
+    
+  
+      
+  
+    "totalunit":19,
+      
+    "total":3.05
+  }
+
+
+  "term":4,
+
+   
+
+
+  "c":"060243110",
+  "namesubject":"JAVASCRIPT PROGRAMMING",
+  "unit":3 ,
+  
+  
+
+  "c2": "060243111",
+  "namesubject2": " SOFTWARE ENGINEERING",
+  "unit2": 3,
+  
+
+  "c3": "060243112 ",
+  "namesubject3":" SYSTEM ANALYSIS AND DESIGN",
+  "unit3": 3,
+  
+
+  "c4": "060243113 ",
+  "namesubject4":" WEB PROGRAMMING",
+  "unit4": 3,
+  
+
+  "c5": "061100001",
+  "namesubject5": "DESIGN THINKING",
+  "unit5": 3,
+
+  "c6": "080103034",
+  "namesubject6": "ENGLISH CONVERSATION",
+  "unit6": 3,
+  
+  
+
+ 
+    
+
+  "totalunit":18
+  
+
+  
+  "e":"6306021620140@fitm.kmutnb.ac.th",
+  "term":2,
+  "year":2563,
+
+
+  
+  "namesubject1":"  040203100  GENERAL MATHEMATICS",
+  "unit1":3 ,
+  "grade1":"B+",
+  
+
+  
+  "namesubject2": " 060243101  FUNDAMENTAL OF INFORMATION ",
+  "unit2":3,
+  "grade2":"C+",
+
+  
+  "namesubject3":" 060243102  COMPUTER PROGRAMMING",
+  "unit3": 3,
+  "grade3":"B",
+
+  
+  "namesubject4":"  060243103  PROBLEM SOLVING IN INFORMATION",
+  "unit4": 3,
+  "grade4":"C",
+
+  
+  "namesubject5": "  080103001  ENGLISH I",
+  "unit5": 3,
+  "grade5":"B+",
+
+  
+  "namesubject6": "  080303518   AEROBIC DANCE & COVER DANCE",
+  "unit6":1,
+  "grade6":"A",
+
+  
+  "namesubject7": "  080303606  SYSTEMATIC AND CREATIVE THINKING",
+  "unit7":3,
+  "grade7":"B+",
+
+  
+
+    
+
+  "totalunit":19,
+    
+  "total":3.05
+}
+
+<% for (var i = 1; i <= 7;  i++ ) { %>
+
+    <% if (subject.grade[i] == null){%>
+
+   <%= subject.grade[i] = 0 %>
+       <% } %>
+       
+       <% } %>

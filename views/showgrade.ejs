@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet"  href="/css/home.css">
+    <link rel="stylesheet"  href="/css/grade.css">
     <title>ระบบคำนวณเกรดเฉลี่ยรวม(GPA)</title>
 
     
@@ -23,6 +23,8 @@
            
           
             <ul>
+                <h3><%= user.name %></h3>
+                <a href = "/calgrade">ผลการเรียน</a>
                
            
                
@@ -36,28 +38,89 @@
 
             </ul>
         </nav>
-        <div class ="bar">
-        <a href="/showgrade">
-        <span class="fas fa-book fa-10x fa-center "></span>
-        <h4><font size ="5">ผลการเรียน</font></h4>
+
+            
+        
+                
+            
+
+        <% Object.values(subject).forEach(function(subject) { %>
+<table border = "1" align="center" width="50%" height = "200" >
+    <caption> ผลการเรียนปีการศึกษา <%= subject.year %>  ภาคเรียนที่ <%= subject.term %></caption><br>
+    <thead>
+        <tr>
+            <th>รหัสวิชา / วิชา</th>
+            <th>หน่วยกิต</th> 
+            <th>เกรด</th></tr>
+        <tbody>
+            <tr>
+              
+                <td> <%= subject.namesubject1 %></td> 
+                <td><%= subject.unit1 %></td> 
+                <td><%= subject.grade1 %></td>
+            </tr>
+            <tr>
+               
+                <td><%= subject.namesubject2%></td>
+                <td><%= subject.unit2 %></td> 
+                <td><%= subject.grade2 %></td>
+            </tr>
+            <tr>
+                <td> <%= subject.namesubject3 %></td> 
+                <td><%= subject.unit3 %></td> 
+                <td><%= subject.grade3 %></td>
+            </tr>
+            <tr>
+                <td> <%= subject.namesubject4 %></td> 
+                <td><%= subject.unit4 %></td> 
+                <td><%= subject.grade4 %></td>
+            </tr>
+            <tr>
+             
+                <td> <%= subject.namesubject5 %></td> 
+                <td><%= subject.unit5 %></td> 
+                <td><%= subject.grade5 %></td>
+            </tr>
+            <tr>
+                
+                <td> <%= subject.namesubject6 %></td> 
+                <td><%= subject.unit6 %></td> 
+                <td><%= subject.grade6 %></td>
+            </tr>
+            <tr>
+                
+                <td> <%= subject.namesubject7 %></td> 
+                <td><%= subject.unit7 %></td>
+                <td><%= subject.grade7 %></td>
+            </tr>   
+            <tr>
+                <td colspan = "2"><tt>เกรดเฉลี่ยประจำภาค</tt></td> 
+                <td colspan = "2">  
+
+
+                       
+                    
+                    <%=  (((subject.unit1 *  subject.grade1) +(subject.unit2 *  subject.grade2)+
+                    (subject.unit3 *  subject.grade3)+(subject.unit4 *  subject.grade4)+(subject.unit5 *  subject.grade5)+
+                    (subject.unit6 *  subject.grade6) +(subject.unit7 *  subject.grade7)) / (subject.unit1 + subject.unit2 + subject.unit3 + subject.unit4 + subject.unit5 + subject.unit6 + subject.unit7)).toFixed(2)
+
+                 
+                        %>
+
+
+                        
+                
+
+                  
+                  
+                    </td>
+        </tbody><br>
+    </thead>
+</table>
+<% }) %>
+
             
       
- </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-        </div>
-
-        <div class ="h">
-            <a href="/calgrade">
-                <span class="fas fa-calculator fa-10x fa-center"></span>
-            <h4><font size ="5">คำนวณเกรดเฉลี่ย</font></h4>
-                
-          
-     </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    
-            </div>
-
         
       
        

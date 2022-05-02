@@ -1,5 +1,8 @@
 body{
-    background-color: white;
+    text-align: center;
+    background-image: url('../image/10.jpg');
+    position: center;
+    background-size:cover;
 }
 img{
     width: 150px;
@@ -19,31 +22,110 @@ nav{
     -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.73);
 
 }
+
 nav ul{
-    float: right;
-    margin-right: 40px;
-   
-   
+float: right;
+margin-right: 40px;
+
+
 }
 nav li{
-    display: inline-block;
-    margin: 0 8px;
-    line-height: 80px;
+display: inline-block;
+margin: 0 8px;
+line-height: 80px;
 }
 nav a {
-    color: white;
-    font-size: 30px;
+color: white;
+font-size: 30px;
+
+
 
 }
 .gg{
 
-    padding-top: 10%;
-    padding-left: 30%;
+   padding-top: 50px;
+    text-align: center;
+    
 
+        width: 700px;
+        height: 550px;
+        position: absolute;
+        
+    
+      
+        top: 60%;
+        left: 50%;
+        background-color: white;
+        transform: translate(-50%,-50%);
+      
+        border-radius: 20px;
+        box-shadow: 10px 10px 20px #0abde3;
+ 
+    
+    
+    
+
+}
+input[type="text" i] {
+    border-width: 1px;
+    border-radius: 5px;
+  
+    border-color: black;
+    padding: 1px 2px;
 }
 .btn2{
 
    text-align: center;
+   
 
 
 }
+.btn2{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 30px;
+    background: none;
+    border: #066888 solid 2px;
+    color: #066888;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+    cursor: pointer;
+   
+    
+    
+
+}
+.btn2::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background: #066888;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: .4s;
+}
+.btn2:hover{
+    color:white;
+
+}
+.btn2:hover::after{
+    width: 100%;
+}
+
+#t1,#t2,#t3,#t4,#u4{
+    text-align: left;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #341f97;
+    width: 200px;
+    font-size: 20px;
+    color: #341f97;
+    
+
+}
+

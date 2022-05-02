@@ -16,7 +16,7 @@
     
       
       
-       
+      
         <nav>
             <img src= "fitm.png">
             <h1>ระบบคำนวณเกรดเฉลี่ยรวม(GPA)</h1>
@@ -24,7 +24,8 @@
           
             <ul>
                
-          
+                <h3><%= user.name %></h3>
+                <a href = "/showgrade">ผลการเรียน</a>
                
                 <a href="/login">
                 <i class="fa-solid fa-right-from-bracket fa-1x"></i>
@@ -36,43 +37,101 @@
 
             </ul>
         </nav>
+        
         <div class="gg">
-            <span>เกรดเฉลี่ยเทอม 1 :</span>
-            <input type="text" id="t1">
+            <h1>คำนวณเกรด</h1>
+          
+         
+            
+          <form method="POST" action ="/termgrade1">
+            <select id="y" name="year" required>
+            <option value="">กรุณาเลือกปีการศึกษา</option>
+            <option value="2564">2564</option>
+            <option value="2565">2565</option>
+            </select> 
 
-            <span>หน่วยกิตรวมเทอม 1 :</span>
-            <input type="text" id="t11"><br><br>
+            <select id="t" name="term" required>
+                <option value="">กรุณาเลือกเทอม</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                </select> <br><br><br>
+
+                    
+
+               
+
+          
+            <% for (var i = 1; i <= 7;  i++ ) { %>
+
+
+                <select id="subj"  name ="namesubject<%= i %>">
+                    <option value="">กรุณาเลือกวิชา</option>
+                    <option value="060243110 JAVASCRIPT PROGRAMMING">"060243110 JAVASCRIPT PROGRAMMING"</option>
+                    <option value="060243111 SOFTWARE ENGINEERING">" 060243111 SOFTWARE ENGINEERING"</option>
+                    <option value="060243112 SYSTEM ANALYSIS AND DESIGN"> "060243112 SYSTEM ANALYSIS AND DESIGN">
+                    <option value="060243113  WEB PROGRAMMING">"060243113  WEB PROGRAMMING">
+                    <option value="061100001  DESIGN THINKING"> "061100001  DESIGN THINKING">
+                        <option value="080103034  ENGLISH CONVERSATION"> "080103034  ENGLISH CONVERSATION"</option>
+                    </select>
+               
+
+                    <select id="grade" name ="grade<%= i%>">
+                        <option value="">กรุณาเลือกเกรด</option>
+                        <option value=4>A</option>
+                        <option value=3.5>B+</option>
+                        <option value=3> B</option>
+                        <option value=2.5>C+</option>
+                        <option value=2> C</option>
+                            <option value=1.5> D</option>
+                            <option value=1> D</option>
+                            <option value=0> F</option>
+                        </select>
+
+                        <select id="unit" name ="unit<%= i%>">
+                            <option value="">กรุณาเลือกหน่วยกิต</option>
+                            <option value=1>1</option>
+                            <option value=1.5>1.5</option>
+                            <option value=2> 2>
+                            <option value=2.5>2.5>
+                            <option value=3> 3>
+                                
+                            </select>
+                   
+           
+            <% } %>
+            <br>
+            <input type="submit" value="คำนวณ" />
+        </form>
+         
+<br>
+            
+   
+    
+   
+    
+            
+           
+
+
+            
+
+            
+
+           
+            
+
+            
+            
 
         
 
-        
-            <span>เกรดเฉลี่ยเทอม 2 :</span>
-            <input type="text" id="t2">
+            
+         
 
-            <span>หน่วยกิตรวมเทอม 2 :</span>
-            <input type="text" id="t22"><br><br>
 
         
 
-        
-        
-            <span>เกรดเฉลี่ยเทอม 3:</span>
-            <input type="text" id="t3">
-
-            <span>หน่วยกิตรวมเทอม  3:</span>
-            <input type="text" id="t33"><br><br>
-
-
-            <span>เกรดเฉลี่ยเทอม 4:</span>
-            <input type="text" id="t4">
-            <span>หน่วยกิตรวมเทอม  4:</span>
-            <input type="text" id="t44"><br><br><br><br>
-
-        </div>
-
-<center><button class =" btn2"  onclick="calgrade()">คำนวณ</button></center><br>
-        
-<center><p id ="result">เกรดเฉลี่ยรวม  4 เทอม :</p></center>
+</div>
 
 
 
@@ -86,9 +145,7 @@ function calgrade(){
     var term3 = document.getElementById('t3').value;
     var term4 = document.getElementById('t4').value;
 
-    var u1 = document.getElementById('t11').value;
-    var u2 = document.getElementById('t22').value;
-    var u3 = document.getElementById('t33').value;
+   
     var u4 = document.getElementById('t44').value;
 
 

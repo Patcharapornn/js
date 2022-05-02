@@ -10,51 +10,50 @@ const subjectSchema = new mongoose.Schema({
 
     e:String,
 
-    c: String,
-    namesubject: String,
-    unit: Number,
-    grade:String,
+    term:Number,
+    year:Number,
+  
+    namesubject1: String,
+    unit1: Number,
+    grade1:Number,
 
 
-    c2: String,
     namesubject2: String,
     unit2: Number,
-    grade2:String,
+    grade2:Number,
 
-    c3: String,
+    
     namesubject3: String,
     unit3: Number,
-    grade3:String,
+    grade3:Number,
 
-    c4: String,
+   
     namesubject4: String,
     unit4: Number,
-    grade4:String,
+    grade4:Number,
 
-    c5: String,
+    
     namesubject5: String,
     unit5: Number,
-    grade5:String,
+    grade5:Number,
 
-    c6: String,
     namesubject6: String,
     unit6: Number,
-    grade6:String,
+    grade6:Number,
 
-    c7: String,
+    
     namesubject7: String,
     unit7: Number,
-    grade7:String,
+    grade7:Number,
 
     totalunit:Number,
     
-    total:Number
-
+    total:Number,
 
 
     
 
-   
+     
  })
  
 //สร้างโมเดล

@@ -1,5 +1,6 @@
 
 // เรียกใช้
+const session = require('express-session')
 require('dotenv').config()
 const mongoose = require('mongoose')
 const express = require('express') 
@@ -20,6 +21,14 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.use(
+  session({
+    secret: 'my_super_dpplll',
+    resave: false,
+    saveUninitialized: false
+  })
+)
+
 app.use(router)
 app.use(express.static(path.join(__dirname,'public')))  
 app.use(express.static(path.join(__dirname,'public/image')))    // อ้างอิงข้อมูลไฟล์ static
@@ -36,5 +45,7 @@ app.listen(8080,()=>{
     require =('./db')
 
 })
+
+
 
 
