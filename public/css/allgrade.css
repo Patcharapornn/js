@@ -42,19 +42,19 @@ font-size: 30px;
 
 
 }
-.gg{
+.container{
 
-   padding-top: 50px;
+   padding-top: 40px;
     text-align: center;
     
 
         width: 800px;
-        height: 750px;
+        height: auto;
         position: absolute;
         
     
       
-        top: 80%;
+        top: 50%;
         left: 50%;
         background-color: white;
         transform: translate(-50%,-50%);
@@ -149,14 +149,17 @@ h1{
     padding-right: 700px;
     font-family: 'Chakra Petch', sans-serif;
     color: white;
+    text-align: center;
 }
 h6{
-    color: black;
-    
+    padding-top: 30px;
+    font-size: 30px;
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 50px;
+    color: white;
+    text-align: center;
 
 }
+
 form{
     border-width: 3px;
     border-radius: 5px;
@@ -167,63 +170,18 @@ form{
     
 
 }
-input[type="submit" ] {
-    text-align: center;
- 
-    
-}
 
-input[type="submit" ] {
-    text-align: center;
-    font-size: 15px;
-    padding: 10px 30px;
-    background: none;
-    border: #066888 solid 2px;
-    color: #066888;
-    font-weight: 700;
-    letter-spacing: 2px;
-    position: relative;
-    overflow: hidden;
-    transition: .4s;
-    cursor: pointer;
-   
-    
-    
-}
-input[type="submit" ]::after{
-    content: "";
-    width: 0%;
-    height: 100%;
-    position: absolute;
-    background: #066888;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: .4s;
-}
 
-input[type="submit" ]:hover{
-    color:white;
-
-}
-input[type="submit" ]:hover::after{
-    width: 100%;
-}
-form select #subj #grade #unit {
-    width: 300px;
-
-}
-
-input[type="submit" ]{
+.btn1{
 
     text-align: center;
     
  
  
  }
- input[type="submit" ]{
+ .btn1{
      text-align: center;
-     font-size: 17px;
+     font-size: 15px;
      padding: 10px 30px;
      background: none;
      border: #066888 solid 2px;
@@ -239,7 +197,7 @@ input[type="submit" ]{
      
  
  }
- input[type="submit" ]::after{
+ .btn1::after{
      content: "";
      width: 0%;
      height: 100%;
@@ -250,14 +208,13 @@ input[type="submit" ]{
      z-index: -1;
      transition: .4s;
  }
- input[type="submit" ]:hover{
+ .btn1:hover{
      color:white;
  
  }
- input[type="submit" ]::after{
+ .btn1:hover::after{
      width: 100%;
  }
- .m{margin: 0px 0px 30px 0px;}
-
-
-
+ .result{
+     font-size: 30px;
+ }

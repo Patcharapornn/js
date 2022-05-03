@@ -46,10 +46,9 @@ const subjectSchema = new mongoose.Schema({
     unit7: Number,
     grade7:Number,
 
-    totalunit:Number,
-    
-    total:Number,
+    totalunit:Number
 
+  
 
     
 

@@ -1,10 +1,11 @@
 body{
    
     text-align: center;
-    background-image: url('../image/10.jpg');
+    background-image: url('../image/06.jpg');
     position: center;
     background-size:cover;
     background-position: 50% 40%;
+  
  
 
 }
@@ -52,30 +53,8 @@ nav a {
 
 }
 
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-th, td {
-    padding: 15px;
-width:20%;
- 
-}
-td{
-border: 1px #0000FF solid; 
-border-bottom: 3px navy double;
-font-size:20px;
-}
-.table1{
-    background-color: white;
-    
-    border-radius: 15px;
-}
-.storage{
-    margin: 0;
-    text-align: center;
-    padding-top: 20%;
-}
+
+
 .bar {
     padding-top: 5px;
     width: 250px;
@@ -84,7 +63,7 @@ font-size:20px;
 
   
     top: 41%;
-    left: 30%;
+    left: 15%;
     background-color: white;
     border-radius: 25px;
     font-size: 15px;
@@ -101,7 +80,7 @@ font-size:20px;
 
   
     top: 41%;
-    left: 60%;
+    left: 42%;
     background-color: white;
     border-radius: 25px;
     font-size: 15px;
@@ -131,4 +110,21 @@ h1{
     padding-right: 700px;
     font-family: 'Chakra Petch', sans-serif;
     color: white;
+}
+
+.g{
+
+    padding-top: 15px;
+    width: 250px;
+    position: absolute;
+    
+
+  
+    top: 41%;
+    left: 70%;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 15px;
+    font-family: 'Chakra Petch', sans-serif;
+    box-shadow: 10px 10px 20px #0abde3;
 }

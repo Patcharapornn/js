@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet"  href="/css/grade.css">
+    <link rel="stylesheet"  href="/css/showgrade.css">
     <title>ระบบคำนวณเกรดเฉลี่ยรวม(GPA)</title>
 
     
@@ -14,8 +14,7 @@
    
     <body>
     
-      
-      
+      <div class ="cc">
        
         <nav>
             <img src= "fitm.png">
@@ -24,7 +23,7 @@
           
             <ul>
                 <h3><%= user.name %></h3>
-                <a href = "/calgrade">ผลการเรียน</a>
+               
                
            
                
@@ -40,12 +39,12 @@
         </nav>
 
             
-        
+      
                 
-            
+            <div class="container">
 
         <% Object.values(subject).forEach(function(subject) { %>
-<table border = "1" align="center" width="50%" height = "200" >
+<center><table border = "1" align="center" width="50%" height = "200" ></center>
     <caption> ผลการเรียนปีการศึกษา <%= subject.year %>  ภาคเรียนที่ <%= subject.term %></caption><br>
     <thead>
         <tr>
@@ -53,60 +52,87 @@
             <th>หน่วยกิต</th> 
             <th>เกรด</th></tr>
         <tbody>
+            <% if(subject.namesubject1 != undefined) { %>
             <tr>
               
                 <td> <%= subject.namesubject1 %></td> 
                 <td><%= subject.unit1 %></td> 
                 <td><%= subject.grade1 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject2 != undefined) { %>
             <tr>
                
                 <td><%= subject.namesubject2%></td>
                 <td><%= subject.unit2 %></td> 
                 <td><%= subject.grade2 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject3 != undefined) { %>
             <tr>
                 <td> <%= subject.namesubject3 %></td> 
                 <td><%= subject.unit3 %></td> 
                 <td><%= subject.grade3 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject4 != undefined) { %>
             <tr>
                 <td> <%= subject.namesubject4 %></td> 
                 <td><%= subject.unit4 %></td> 
                 <td><%= subject.grade4 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject5 != undefined) { %>
             <tr>
              
                 <td> <%= subject.namesubject5 %></td> 
                 <td><%= subject.unit5 %></td> 
                 <td><%= subject.grade5 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject6 != undefined) { %>
             <tr>
                 
                 <td> <%= subject.namesubject6 %></td> 
                 <td><%= subject.unit6 %></td> 
                 <td><%= subject.grade6 %></td>
             </tr>
+            <% } %>
+            <% if(subject.namesubject7 != undefined) { %>
             <tr>
-                
                 <td> <%= subject.namesubject7 %></td> 
                 <td><%= subject.unit7 %></td>
                 <td><%= subject.grade7 %></td>
             </tr>   
+        
+        
+            <% } %>
+          
+   
+        
             <tr>
+                <div class = "font">
                 <td colspan = "2"><tt>เกรดเฉลี่ยประจำภาค</tt></td> 
-                <td colspan = "2">  
-
-
-                       
+                <td colspan = "2"> 
                     
-                    <%=  (((subject.unit1 *  subject.grade1) +(subject.unit2 *  subject.grade2)+
-                    (subject.unit3 *  subject.grade3)+(subject.unit4 *  subject.grade4)+(subject.unit5 *  subject.grade5)+
-                    (subject.unit6 *  subject.grade6) +(subject.unit7 *  subject.grade7)) / (subject.unit1 + subject.unit2 + subject.unit3 + subject.unit4 + subject.unit5 + subject.unit6 + subject.unit7)).toFixed(2)
-
+                
+                    
+                    
+                    
+                    
+    <%=  (((subject.unit1 *  subject.grade1) +(subject.unit2 *  subject.grade2)+
+    (subject.unit3 *  subject.grade3)+(subject.unit4 *  subject.grade4)+(subject.unit5 *  subject.grade5)+
+    (subject.unit6 *  subject.grade6) +(subject.unit7 *  subject.grade7)) / (subject.unit1 + subject.unit2 + subject.unit3 + subject.unit4 + subject.unit5 + subject.unit6 + subject.unit7)).toFixed(2)
+    
+    
                  
-                        %>
+                        %> </td> 
+                        
+                </div>
+              
 
+             
+       
 
                         
                 
@@ -116,42 +142,25 @@
                     </td>
         </tbody><br>
     </thead>
-</table>
-<% }) %>
+</table>    
 
-            
-      
-        
-      
-       
+
+
 
           
-        
-       
+
+<% }) %>
+
+
+<br>
+<br>
+
+<center><a href="/home"></center>
+    <button class="btn2">ย้อนกลับ</button>
+</a>
+</div>
       
-       
-           
-            
-           
-               
-
-  
-
-      
-            
-
-        
-
-                
-               
-               
-                    
-                  
-                    
-               
-               
-                   
-                
+</div>
 
         </body>
         </html>

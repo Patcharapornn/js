@@ -2,8 +2,8 @@
 // ควบคุมเงื่อนไข
 const { render } = require('ejs')
 const express = require('express') // ดึง express มาใช้งาน
-const User = require('../model/user')
-const Subject  = require('../model/subject')
+const User = require('../model/user')   // ดึงข้อมูล user มา
+const Subject  = require('../model/subject')    // ดึง subject
 
 
 const router = express.Router()
@@ -27,7 +27,28 @@ router.get('/home',isLoggedIn,(req,res)=>{
 router.get('/showgrade',isLoggedIn,async(req,res)=>{
 
 
-  const sj = await Subject.find({e: req.session.user.e})
+    let sj = await Subject.find({e: req.session.user.e})
+    for (let index in sj) {
+      sj[index] = {
+        unit1: 0,
+        grade1: 0,
+        unit2:0,
+        grade2: 0,
+        unit3:0,
+        grade3: 0,
+        unit4:0,
+        grade4: 0,
+        unit5:0,
+        grade5: 0,
+        unit6:0,
+        grade6: 0,
+        unit7:0,
+        grade7: 0,
+        ...sj[index]._doc
+      };
+    }
+   
+    console.log(sj)
     res.render('showgrade',{user:req.session.user,subject:sj})
   })
 
@@ -41,10 +62,44 @@ res.render('home',{user:req.session.user})
   
 })
 
-router.get('/allterm',isLoggedIn,(req,res)=>{
-  res.render('allterm',{user:req.session.user})
+router.get('/allgrade',isLoggedIn, async (req,res)=>{
+  let sj = await Subject.find({e: req.session.user.e})
+  let grade = [];
+  for (let index in sj) {
+    sj[index] = {
+      unit1: 0,
+      grade1: 0,
+      unit2:0,
+      grade2: 0,
+      unit3:0,
+      grade3: 0,
+      unit4:0,
+      grade4: 0,
+      unit5:0,
+      grade5: 0,
+      unit6:0,
+      grade6: 0,
+      unit7:0,
+      grade7: 0,
+      ...sj[index]._doc
+    };
+    let total = (((sj[index].unit1 *  sj[index].grade1) +(sj[index].unit2 *  sj[index].grade2)+
+    (sj[index].unit3 *  sj[index].grade3)+(sj[index].unit4 *  sj[index].grade4)+(sj[index].unit5 *  sj[index].grade5)+
+    (sj[index].unit6 *  sj[index].grade6) +(sj[index].unit7 *  sj[index].grade7)) / (sj[index].unit1 + sj[index].unit2 + sj[index].unit3 + sj[index].unit4 + sj[index].unit5 + sj[index].unit6 + sj[index].unit7)).toFixed(2)
+    grade.push(total);
+  }
+
+  if (grade.length < 3) {
+    grade = [0, 0, 0];
+  }
+
+  res.render('allgrade',{user:req.session.user, grade: grade})
+             
 
 })
+
+
+
 
 
   
@@ -58,6 +113,8 @@ router.get('/login',(req,res)=>{
   res.render('login.ejs')     //แสดงผลเนื้อหาใน views
    
 })
+
+router.post('/a')
 
 
 
@@ -83,6 +140,9 @@ router.post('/login',async(req,res)=>{
 
   }
 })
+
+
+
 
 
 
@@ -113,7 +173,8 @@ router.post('/termgrade1',(req, res) => {
   }
   const subject = new Subject({
 
-    e:req.session.user.e,
+    e:req.body.e,
+
     term:req.body.term,
     year:req.body.year,
      
@@ -150,11 +211,8 @@ router.post('/termgrade1',(req, res) => {
       unit7: req.body.unit7,
       grade7:req.body.grade7,
 
-      totalunit:req.body.totalunit,
+        
 
-   
-    
-      total:req.body.total
       
     
     
@@ -170,6 +228,11 @@ router.post('/termgrade1',(req, res) => {
     res.status(400).json({ message: err.message })
     }
 })
+
+
+
+
+
 
 
 
