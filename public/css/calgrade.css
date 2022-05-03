@@ -49,12 +49,12 @@ font-size: 30px;
     
 
         width: 850px;
-        height: 750px;
+        height: 700px;
         position: absolute;
         
     
       
-        top: 90%;
+        top: 70%;
         left: 50%;
         background-color: white;
         transform: translate(-50%,-50%);
