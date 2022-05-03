@@ -44,36 +44,37 @@
                 
                 
         
-                    <div class="gg">
-                        <span>เกรดเฉลี่ยเทอม 1:</span>
-                        <input value="<%= grade[0] %>" type="text" id="g1"><br><br>
+        <div class="gg">
+            <span>เกรดเฉลี่ยเทอม 1:</span>
+                <input value="<%= grade[0] %>" type="text" id="g1"><br><br>
         
                     
         
                     
-                        <span>เกรดเฉลี่ยเทอม 2 :</span>
-                        <input value="<%= grade[1] %>" type="text" id="g2"><br><br>
+            <span>เกรดเฉลี่ยเทอม 2 :</span>
+            <input value="<%= grade[1] %>" type="text" id="g2"><br><br>
         
                     
         
                     
                     
-                        <span>เกรดเฉลี่ยเทอม 3:</span>
-                        <input value="<%= grade[2] %>" type="text" id="g3"><br><br>
+            <span>เกรดเฉลี่ยเทอม 3:</span>
+                <input value="<%= grade[2] %>" type="text" id="g3"><br><br>
         
                         
-                        <span>เกรดเฉลี่ยเทอม 4:</span>
-                        <input type="text" id="g4"><br><br><br>
+            <span>เกรดเฉลี่ยเทอม 4:</span>
+             <input type="text" id="g4"><br><br><br>
                     
         
-                    </div>
+        </div>
         
                  
-                    <a href="/home">
-                        <button class="btn1" >ย้อนกลับ</button></a>
+            <a href="/home">
+                    <button class="btn1" >ย้อนกลับ</button></a>
         
-                     <button class =" btn2"  onclick="calallgrade()">คำนวณ</button><br><br><br><br>
-                     <div class ="result" id ="total"></div>
+                    <button class =" btn2"  onclick="calallgrade()">คำนวณ</button><br><br><br><br>
+
+     <div class ="result" id ="total"></div>
 
                      
                     
@@ -91,7 +92,7 @@
         var grade3 = document.getElementById('g3').value;
         var grade4 = document.getElementById('g4').value;
        
-        check(grade1)
+       
     
         if(grade1>0){
             var cal =  (grade1 * 19) + (grade2 * 18 ) + (grade3 * 15 ) + (grade4 * 18);
@@ -103,23 +104,13 @@
         }
        
     }
-    function check(grade1){
-        let str_msg =""
-        if(grade1 =="" ||grade1==undefined||grade1==null){
-            str_msg = str_msg + "กรุณากรอกข้อมูล";
-        }
-      
-        
-        
     
-    if (str_msg != ""){
-        alert(str_msg);
     
-    }
-    }
+    
+    
 </script>
             
              
-                </body>
+</body>
                
-                </html>
+</html>

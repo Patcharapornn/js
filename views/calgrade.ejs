@@ -31,20 +31,17 @@
                 <i class="fa-solid fa-right-from-bracket fa-1x"></i>
             
             </a>
-      
-         
-          
-
-            </ul>
+      </ul>
         </nav>
         
+
         <div class="gg">
             <h6>คำนวณเกรด</h6>
             <br><br><br>
           
          
             
-          <form method="POST" action ="/termgrade1">
+        <form method="POST" action ="/termgrade1">
             <select id="y" name="year" required>
             <option value="">กรุณาเลือกปีการศึกษา</option>
             <option value="2564">2564</option>
@@ -63,10 +60,10 @@
                
 
           
-            <% for (var i = 1; i  <= 7 ;  i++ ) { %>
+         <% for (var i = 1; i  <= 7 ;  i++ ) { %>
 
 
-                <select class ="m" id="subj"  name ="namesubject<%= i %>">
+            <select class ="m" id="subj"  name ="namesubject<%= i %>">
                     <option value="">กรุณาเลือกวิชา</option>
                     <option value="060243110 JAVASCRIPT PROGRAMMING">060243110 JAVASCRIPT PROGRAMMING</option>
                     <option value="060243111 SOFTWARE ENGINEERING">060243111 SOFTWARE ENGINEERING</option>
@@ -97,13 +94,14 @@
                             <option value=2.5>2.5</option>
                             <option value=3> 3</option>     
                                 
-                            </select>
+    </select>
                             
                    
            
-            <% } %>
-            <br><br><br><br>
-            <input type="submit" value="คำนวณ" />
+        <% } %>
+
+        <br><br><br><br>
+        <input type="submit" value="คำนวณ" />
            
         
           
@@ -124,9 +122,9 @@
         
             
     
-            </body>
+</body>
             
-            </html>
+</html>
                 
 
 
