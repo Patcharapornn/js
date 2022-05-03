@@ -173,7 +173,7 @@ router.post('/termgrade1',(req, res) => {
   }
   const subject = new Subject({
 
-    e:req.body.e,
+    e:req.session.user.e,
 
     term:req.body.term,
     year:req.body.year,
