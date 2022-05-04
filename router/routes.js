@@ -98,12 +98,6 @@ router.get('/allgrade',isLoggedIn, async (req,res)=>{
 
 })
 
-
-
-
-
-  
-
 router.get('/calgrade',isLoggedIn,(req,res)=>{         //แสดงผลเนื้อหาใน views
   res.render('calgrade.ejs',{user:req.session.user})
 })
@@ -115,8 +109,6 @@ router.get('/login',(req,res)=>{
 })
 
 router.post('/a')
-
-
 
 
 // ของ register
@@ -141,11 +133,6 @@ router.post('/login',async(req,res)=>{
   }
 })
 
-
-
-
-
-
 router.post('/register',async(req, res) => {
   const user = new User({
 
@@ -164,7 +151,6 @@ router.post('/register',async(req, res) => {
     res.status(400).json({ message: err.message })
     }
 })
-
 
 router.post('/termgrade1',(req, res) => {
 
@@ -211,11 +197,7 @@ router.post('/termgrade1',(req, res) => {
       unit7: req.body.unit7,
       grade7:req.body.grade7,
 
-        
-
-      
-    
-    
+          
   })
 
   try {
@@ -228,10 +210,6 @@ router.post('/termgrade1',(req, res) => {
     res.status(400).json({ message: err.message })
     }
 })
-
-
-
-
 
 
 

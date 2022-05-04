@@ -2,9 +2,6 @@
 
 const mongoose = require('mongoose')
 
-//เชื่อมไปยัง Mongodb
-
-
 const subjectSchema = new mongoose.Schema({
 
 
@@ -48,9 +45,6 @@ const subjectSchema = new mongoose.Schema({
 
     totalunit:Number
 
-  
-
-    
 
      
  })

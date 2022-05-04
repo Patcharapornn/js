@@ -29,13 +29,11 @@ app.use(
   })
 )
 
-app.use(router)
+app.use(router)  //app.use(router)    // เรียกใช้ router
 app.use(express.static(path.join(__dirname,'public')))  
 app.use(express.static(path.join(__dirname,'public/image')))    // อ้างอิงข้อมูลไฟล์ static
 
-//app.use(router)    // เรียกใช้ router
-
-app.set('views',path.join(__dirname,'views'))    // อ้างอิงตำแหน่ง template
+app.set('views',path.join(__dirname,'views'))    // อ้างอิงตำแหน่ง template 
 app.set('view engine','ejs')
 
 app.listen(8080,()=>{
